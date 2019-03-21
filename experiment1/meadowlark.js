@@ -8,8 +8,6 @@ var tempFortune = require('./lib/fortune.js');
 
 var app = express();
 
-//setup handlebars view engine
-
 var handlebars = require('express3-handlebars').create({defaultLayout:'main'});
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
